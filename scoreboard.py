@@ -14,7 +14,8 @@ class Scoreboard(Turtle):
         super().__init__()
         self.score = 0
         with open("data.txt") as data:         #saving the file to a variable data
-            self.high_score = int(data.read())
+            content = data.read().strip()
+            self.high_score = int(content) if content else 0
         self.color("white")
         self.penup()
         self.goto(0, 265)
