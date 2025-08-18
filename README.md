@@ -21,17 +21,17 @@ The project incorporates **both programming best practices and real time graphic
 - **🎨 Graphics Engine:**  
   Built using Python’s built in `turtle` module, enabling smooth and responsive 2D rendering without external dependencies.
 
-- **🏗 Object-Oriented Programming (OOP):**  
+- **🏗 Object Oriented Programming (OOP):**  
   Classes are implemented for each game component (`Snake`, `Food`, `Scoreboard`) ensuring **encapsulation, modularity, and reusability**.
 
 - **🧠 Game Logic & State Management:**  
   - Continuous game loop with controlled frame rate using `time.sleep()`.  
-  - **Real-time collision detection** for snake-to-food, snake-to-wall, and snake-to-self interactions.
+  - **Real time collision detection** for snake-to-food, snake-to-wall, and snake-to-self interactions.
 
 - **🗂 File Handling for Data Persistence:**  
   High score stored in `data.txt`, ensuring player achievements are saved across sessions.
 
-- **🖥 Cross-Platform Compatibility:**  
+- **🖥 Cross Platform Compatibility:**  
   Environment variables (`TCL_LIBRARY` & `TK_LIBRARY`) configured for seamless execution on multiple OS setups.
 
 ---
@@ -76,7 +76,7 @@ classic-snake-game-project/
     ├── main.py         # Entry point – initializes and runs the game loop
     ├── snake.py        # Snake class – handles creation, movement, and growth
     ├── food.py         # Food class – handles random spawning and rendering
-    ├── scoreboard.py   # Scoreboard class – manages scoring and high-score persistence
+    ├── scoreboard.py   # Scoreboard class – manages scoring and high score persistence
     ├── data.txt        # Stores the highest score between game sessions
     └── README.md       # Project documentation
     ├── snake_game_no_highscore.png
@@ -154,9 +154,9 @@ The scoreboard instantly reflects your achievement, motivating you to keep beati
 
 - **📈 Persistent High Score Tracking** – Your top score is automatically saved in the `data.txt` file, ensuring that even after closing the program, your record remains intact. The game instantly reads and updates this file, allowing you to track your progress over time and strive for personal bests.  
 
-- **⚡ Performance-Optimized Execution** – Designed with Python’s `turtle` graphics library for lightweight yet visually appealing gameplay. The rendering loop and update intervals are tuned to balance speed and smoothness without causing frame drops or input lag.  
+- **⚡ Performance Optimized Execution** – Designed with Python’s `turtle` graphics library for lightweight yet visually appealing gameplay. The rendering loop and update intervals are tuned to balance speed and smoothness without causing frame drops or input lag.  
 
-- **🛠 Modular and Scalable Architecture** – Organized into separate, purpose-driven modules:
+- **🛠 Modular and Scalable Architecture** – Organized into separate, purpose driven modules:
   - `snake.py` – Handles snake creation, movement, and growth mechanics.  
   - `food.py` – Controls random food placement and appearance.  
   - `scoreboard.py` – Manages score tracking, display, and high score persistence.  
@@ -165,9 +165,9 @@ The scoreboard instantly reflects your achievement, motivating you to keep beati
 
 - **🎯 Advanced Gameplay Mechanics** – Features realistic boundary collision logic, automatic reset upon losing, and self-collision detection to ensure fair gameplay. Snake growth is visually smooth and food spawning is carefully randomized to avoid overlapping game elements.  
 
-- **🖥 Cross-Platform Compatibility** – Works seamlessly on Windows, macOS, and Linux with Python 3.x installed. No additional dependencies are required beyond the standard Python library, making it easy to run anywhere.  
+- **🖥 Cross Platform Compatibility** – Works seamlessly on Windows, macOS, and Linux with Python 3.x installed. No additional dependencies are required beyond the standard Python library, making it easy to run anywhere.  
 
-- **🎨 Minimalist Yet Engaging Visual Design** – Simple color schemes and clear on-screen text enhance focus on gameplay while maintaining a polished, professional look.  
+- **🎨 Minimalist Yet Engaging Visual Design** – Simple color schemes and clear on screen text enhance focus on gameplay while maintaining a polished, professional look.  
 
 ---
 
@@ -175,6 +175,6 @@ The scoreboard instantly reflects your achievement, motivating you to keep beati
 
 This project was developed as part of my learning journey through **"100 Days of Code: The Complete Python Pro Bootcamp" by Dr. Angela Yu**. The course provided the foundational concept and guidance for the Snake game, while I worked on implementing the solution, organizing the code, and refining the structure to achieve a clean, modular, and functional final product.  
 
-The inclusion of features such as **persistent high score tracking**, **modular file separation**, and **polished README documentation** were added to enhance both **user experience** and **code readability**, transforming the project into a professional-grade demonstration of beginner-to-intermediate Python skills.  
+The inclusion of features such as **persistent high score tracking**, **modular file separation**, and **polished README documentation** were added to enhance both **user experience** and **code readability**, transforming the project into a professional grade demonstration of beginner-to-intermediate Python skills.  
 
-Special acknowledgment to the Python `turtle` graphics library for making the game’s graphical interface possible in a beginner-friendly yet powerful way.  
+Special acknowledgment to the Python `turtle` graphics library for making the game’s graphical interface possible in a beginner friendly yet powerful way.  
