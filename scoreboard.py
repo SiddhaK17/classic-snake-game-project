@@ -1,9 +1,4 @@
-import os
-
-os.environ['TCL_LIBRARY'] = r'C:\Program Files\Python313\tcl\tcl8.6'
-os.environ['TK_LIBRARY'] = r'C:\Program Files\Python313\tcl\tk8.6'
-
-from turtle import Turtle, Screen
+from turtle import Turtle
 ALIGNMENT = "center"
 FONT = ("Courier", 24, "normal")
 
@@ -13,9 +8,15 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
-        with open("data.txt") as data:         #saving the file to a variable data
-            content = data.read().strip()
-            self.high_score = int(content) if content else 0
+        
+        try:
+            with open("data.txt") as data:         #saving the file to a variable data
+                content = data.read().strip()
+                self.high_score = int(content) if content else 0
+        
+        except FileNotFoundError:
+            self.high_score = 0
+            
         self.color("white")
         self.penup()
         self.goto(0, 265)
