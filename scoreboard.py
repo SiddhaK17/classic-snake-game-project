@@ -3,7 +3,7 @@ ALIGNMENT = "center"
 FONT = ("Courier", 24, "normal")
 
 class Scoreboard(Turtle):
-# The below things will make sure that the program would work even if the file storing the high score is empty
+# Prevent crashes if data.txt is empty or missing
 
     def __init__(self):
         super().__init__()
